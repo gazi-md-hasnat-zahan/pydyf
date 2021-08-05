@@ -505,7 +505,7 @@ class PDF:
         self.write_line(str(self.xref_position).encode('ascii'), output)
         self.write_line(b'%%EOF', output)
 
-    def write(self, output=sys.stdout.buffer):
+    def write(self, output=sys.stdout):
         """Write PDF to output.
 
         :param output: Output stream, :obj:`sys.stdout` by default.
